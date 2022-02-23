@@ -1,0 +1,20 @@
+{
+  "name": "es-test",
+  "version": "0.1.0",
+  "description": "some elasticsearch tests",
+  "main": "index.js",
+  "engines": {
+    "node": ">=12.x"
+  },
+  "scripts": {
+    "install ": "docker-compose down && rm -rf ./.gen && docker-compose up --force-recreate -d",
+    "start": "npm test",
+    "test": "node index.js",
+    "start-big-import": "node big-import.js",
+    "start-big-search": "node big-search.js"
+  },
+  "dependencies": {
+    "@elastic/elasticsearch": "7.10.0"
+  },
+  "devDependencies": {}
+}
