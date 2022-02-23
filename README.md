@@ -10,7 +10,11 @@ Install an ElasticSearch locally :
 npm run install
 ```
 
-Run your test :
+Check ES is healthy :
+- http://localhost:9200/_cat/health?v
+- http://localhost:9200/_stats
+
+And run your test :
 ```shell
 npm test
 # or

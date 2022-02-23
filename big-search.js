@@ -16,7 +16,6 @@ async function bigSearch() {
     });
 
     console.log(new Date(), 'search result value: ', result.body.hits.hits[0]._source.value);
-    // console.log('### result: ', result);
 }
 
 bigSearch().catch(console.log);
